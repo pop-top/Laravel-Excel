@@ -1,0 +1,46 @@
+{
+  "name": "poptop/excel",
+  "description": "easily to export and import excel",
+  "keywords": ["laravel", "excel", "export", "import"],
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/laravel/passport/issues",
+    "source": "https://github.com/laravel/passport"
+  },
+  "authors": [
+    {
+      "name": "Ethan Li",
+      "email": "li875518644@163.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.0",
+    "maatwebsite/excel": "~2.1.0",
+    "illuminate/container": "~5.4",
+    "illuminate/contracts": "~5.4",
+    "illuminate/database": "~5.4",
+    "illuminate/http": "~5.4"
+  },
+  "require-dev": {
+    "mockery/mockery": "~1.0",
+    "phpunit/phpunit": "~6.0"
+  },
+  "autoload": {
+    "classmap": [
+      "src/PopTop/Excel"
+    ],
+    "psr-0": {
+      "PopTop\\Excel\\": "src/"
+    },
+    "files": [
+      "src/PopTop/helpers.php"
+    ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "PopTop\\Excel\\ExcelServiceProvider"
+      ]
+    }
+  }
+}
